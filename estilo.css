@@ -27,10 +27,20 @@
 
  
 /* GRUPO 2: convite */
-{
-  /* estilo a ser feito */
+
+  .convite{
+      /* estilo a ser feito */
+  background-color: #f4f4f4;
+  padding: 60px 20px;
+  text-align: center;
+  color: #333;
   }
- 
+.conteudo_convite{
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+}
   
 
 /* GRUPO 3: Seção "Sobre a Feira" */
