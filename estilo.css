@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+  
+
+/* GRUPO 1: estilos da seção cabeçalho */
+  .cabecalho{
+
+  background-color: #130505;
+  color: #eb5109;
+  padding: 20px 0;
+  text-align: center;
+}
+.conteudo_cabecalho{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+ .frase_inicio{
+  font-family: cursive;
+  text-align: center;
+  margin-top: 50px;
+}
+
+
+ 
+/* GRUPO 2: convite */
+{
+  /* estilo a ser feito */
+  }
+ 
+  
+
+/* GRUPO 3: Seção "Sobre a Feira" */
+
+.sobre_feira .bloco {
+  margin: 20px auto;
+  max-width: 800px;
+  text-align: left;
+}
+
+.sobre_feira .bloco h2 {
+  margin-bottom: 8px;
+  color: rgb(16, 11, 11);
+}
+
+.sobre_feira .bloco p {
+  margin-bottom: 12px;
+  font-size: 18px;
+}
+.sobre_feira{
+ background-color: #FF7F50;
+  padding: 40px 20px;
+  color: white;
+  text-align: center;
+  justify-content: center;
+ 
+}
+
+ 
+  
+
+/* GRUPO 4:  Seção "Galeria de Feiras Anteriores" */
+.galeria{
+  background-color:#4B0082;
+  padding: 40px 20px;
+  text-align: center;
+  color: whitesmoke;
+}
+ .titulo{
+  font-family:Comic Sans MS, Comic Sans, cursive;
+  font-size: 24px;
+  color: whitesmoke;
+  margin-bottom: 20px;
+  
+ 
+ }
+ .galeriafotos {
+ display: grid;
+ grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+ grid-template-rows: repeat(auto-fit,minmax(200px,1fr));
+ gap: 20px;
+ 
+}
+ div .conteudofts img{
+ 
+  width: 100%;
+  height: auto;
+  
+}
+div .conteudofts{
+
+border: 3px solid whitesmoke;
+ border-radius: 8px;
+overflow: hidden;
+transition: transform 0.2s ease;
+display: flex;
+}
+div .conteudofts:hover{
+transform: scale(1.2);
+}
+  
+/* GRUPO 5:  "Contato"  */
+ .titulo{
+    text-align: center;
+}
+.contato {
+  background-color: #9370DB;
+  padding: 40px 20px;
+  color: black;
+  text-align: center;
+}
+
+.info_contato {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.info_contato div {
+  margin: 10px;
+  padding: 10px;
+  
+  color: black;
+  border-radius: 8px;
+  width: 330px;
+  
+}
+.info_contato h2{
+ font-size: 18px;
+}
+.info_contato h2 i {
+  margin-right: 8px;
+  color: black; /* ou white, se quiser icones claros */
+
+}
+/* GRUPO 6:  "rodape"  */
+  .rodape{
+  background-color: #ffff;
+  display: flex;
+  justify-content: center;
+}
+.conteudo_rodape p {
+  text-align: center;
+  color:black;
+}
+
+
+
+@media (max-width: 768px) {
+  .conteudo_cabecalho {
+    flex-direction: column;
+  }
+
+  .conteudo_cabecalho img {
+    width: 80%;
+    height: auto;
+  }
+
+  .sobre_feira h2 {
+    margin-left: 0;
+  }
+
+  .rodape {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .foto_rodape {
+    margin-top: 10px;
+  }
+}
